@@ -1,0 +1,8 @@
+.element {
+  width: 282px;
+  height: 362px;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+  border-radius: 10px;
+}
