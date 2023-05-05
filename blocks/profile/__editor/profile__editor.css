@@ -1,0 +1,7 @@
+.profile__editor {
+  background-color: black;
+  width: 24px;
+  height: 24px;
+  border: 1px solid #FFFFFF;
+  box-sizing: border-box;
+}
