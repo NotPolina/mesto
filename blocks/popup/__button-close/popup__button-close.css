@@ -9,8 +9,31 @@
   top: 155px;
   left: 863px;
   cursor: pointer;
+  background-image: url(../../../images/close-Icon.png);
+  background-size: contain;
 }
 
 .popup__button-close:hover {
   opacity: 0.6;
+}
+
+@media screen and (max-width: 768px){
+  .popup__button-close {
+   left: 590px;
+  }
+}
+
+@media screen and (max-width: 425px){
+  .popup__button-close {
+    width: 20px;
+    height: 20px;
+    top: 87px;
+    left: 350px;
+  }
+}
+
+@media screen and (max-width: 320px){
+  .popup__button-close {
+    left: 281px;
+  }
 }

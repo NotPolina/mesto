@@ -10,3 +10,9 @@
   height: 14px;
   margin: 0 0 13px 0;
 }
+
+@media screen and (max-width: 425px){
+  .popup__value {
+    width: 238px;
+  }
+}
