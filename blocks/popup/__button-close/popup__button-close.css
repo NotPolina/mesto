@@ -6,7 +6,8 @@
   margin: 0;
   border: none;
   position: absolute;
-  bottom: -10px;
+  top: -40px;
+  right: -40px;
   cursor: pointer;
   background-image: url(../../../images/close-icon.svg);
   background-size: contain;
@@ -16,23 +17,9 @@
   opacity: 0.6;
 }
 
-@media screen and (max-width: 768px){
-  .popup__button-close {
-   left: 590px;
-  }
-}
-
 @media screen and (max-width: 425px){
   .popup__button-close {
     width: 20px;
     height: 20px;
-    top: 87px;
-    left: 350px;
-  }
-}
-
-@media screen and (max-width: 320px){
-  .popup__button-close {
-    left: 281px;
   }
 }
