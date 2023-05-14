@@ -1,15 +1,14 @@
 .popup__button-close {
-  background: black;
+  background-color: inherit;
   width: 32px;
   height: 32px;
   padding: 0;
   margin: 0;
   border: none;
   position: absolute;
-  top: 155px;
-  left: 863px;
+  bottom: -10px;
   cursor: pointer;
-  background-image: url(../../../images/close-Icon.png);
+  background-image: url(../../../images/close-icon.svg);
   background-size: contain;
 }
 

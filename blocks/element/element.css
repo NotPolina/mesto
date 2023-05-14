@@ -1,9 +1,7 @@
 .element {
   width: 282px;
-  height: 362px;
   display: flex;
   flex-direction: column;
-  margin-bottom: 20px;
   background-color: #FFFFFF;
   border-radius: 10px;
 }

@@ -2,9 +2,10 @@
   width: 150px;
   height: 50px;
   border: 2px solid #FFFFFF;
-  background-color: black;
+  background-color: inherit;
   margin: 35px 0 35px auto;
   cursor: pointer;
+  border-radius: 2px;
 }
 
 .profile__add-button:hover {
