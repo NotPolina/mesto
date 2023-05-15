@@ -7,6 +7,6 @@
 @media screen and (max-width: 768px){
   .profile__head {
     text-align: center;
-    margin: 22px auto 25px;
+    margin: 22px auto 0;
   }
 }
