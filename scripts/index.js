@@ -1,4 +1,4 @@
-let formElement = document.querySelector('.popup__container');
+let formElement = document.querySelector('.popup__form');
 
 let buttonPopupOpen = document.querySelector('.profile__edit-button');
 let popup = document.querySelector('.popup');
@@ -23,6 +23,8 @@ function handleFormSubmit (evt) {
 }
 
 function openPopup() {
+  nameInput.value = profileName.textContent;
+  jobInput.value = profileInfo.textContent;
   popup.classList.add('popup_opened')
 }
 

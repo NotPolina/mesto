@@ -4,6 +4,8 @@
   padding: 0;
   background-color: inherit;
   cursor: pointer;
+  width: 22px;
+  height: 19px;
 }
 
 .element__like:hover {
