@@ -26,6 +26,9 @@
        <section class="elements">
           <article class="element">
             <img class="element__item" src="./images/USA.jpg" alt="США">
+            <button class="element__trash" type="button">
+              <img class="element__trash-button" src="./images/Trash.svg" alt="Delete">
+            </button>
             <div class="element__info">
               <h2 class="element__title">США</h2>
               <button class="element__like" type="button">
@@ -35,6 +38,9 @@
           </article>
           <article class="element">
             <img class="element__item" src="./images/turtle.jpg" alt="Черепаха">
+            <button class="element__trash" type="button">
+              <img class="element__trash-button" src="./images/Trash.svg" alt="Delete">
+            </button>
             <div class="element__info">
               <h2 class="element__title">Черепаха</h2>
               <button class="element__like" type="button">
@@ -44,6 +50,9 @@
           </article>
           <article class="element">
             <img class="element__item" src="./images/monterey.jpg" alt="Монтерей">
+            <button class="element__trash" type="button">
+              <img class="element__trash-button" src="./images/Trash.svg" alt="Delete">
+            </button>
             <div class="element__info">
               <h2 class="element__title">Монтерей</h2>
               <button class="element__like" type="button">
@@ -53,6 +62,9 @@
           </article>
           <article class="element">
             <img class="element__item" src="./images/cathedral-cove.jpg" alt="Катедральная пещера">
+            <button class="element__trash" type="button">
+              <img class="element__trash-button" src="./images/Trash.svg" alt="Delete">
+            </button>
             <div class="element__info">
               <h2 class="element__title">Катедральная пещера</h2>
               <button class="element__like" type="button">
@@ -62,6 +74,9 @@
           </article>
           <article class="element">
             <img class="element__item" src="./images/iriomote-island.jpg" alt="Остров Ириомит">
+            <button class="element__trash" type="button">
+              <img class="element__trash-button" src="./images/Trash.svg" alt="Delete">
+            </button>
             <div class="element__info">
               <h2 class="element__title">Остров Ириомит</h2>
               <button class="element__like" type="button">
@@ -71,6 +86,9 @@
           </article>
           <article class="element">
             <img class="element__item" src="./images/cabo-san-lucas.jpg" alt="Кабо Сан Лукас">
+            <button class="element__trash" type="button">
+              <img class="element__trash-button" src="./images/Trash.svg" alt="Delete">
+            </button>
             <div class="element__info">
               <h2 class="element__title">Кабо Сан Лукас</h2>
               <button class="element__like" type="button">
@@ -96,6 +114,19 @@
         </form>
       </div>
     </div>
+    <div class="popup__cards">
+      <div class="popup__container">
+        <button type="button" class="popup__button-close-cards"></button>
+        <form name="profile" class="popup__form-element">
+          <h2 class="popup__title">Новое место</h2>
+          <fieldset class="popup__input-wrapper">
+              <input type="text" name="place" class="popup__input popup__input_place_value" placeholder="Place">
+              <input type="text" name="link" class="popup__input popup__input_link_value" placeholder="Link">
+          </fieldset>
+          <button type="submit" class="popup__button-save">Создать</button>
+        </form>
+      </div>
+    </div>  
   </div>
   <script src="./scripts/index.js"></script>
 </body>
