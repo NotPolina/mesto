@@ -19,6 +19,9 @@ let profileInfo = document.querySelector('.profile__info');
 let cardsPlace = document.querySelector('.element__title');
 let cardsLink = document.querySelector('.element__item');
 
+let card = document.querySelector('.element');
+let cardPhoto = document.querySelector('.element__item');
+
 function handleFormSubmit (evt) {
     evt.preventDefault(); 
 
@@ -40,7 +43,10 @@ function handleAddCards (evt) {
     cardsPlace.textContent = placeValue;
     cardsLink.textContent = linkValue;
 
-   closePopup();
+    let elements = document.querySelector('.elements');
+    elements.unshift
+
+   closePopupCards();
 }
 
 function openPopup() {
@@ -71,33 +77,37 @@ buttonCardsPopupOpen.addEventListener('click', openPopupCards);
 buttonCardsPopupClose.addEventListener('click', closePopupCards);
 formElementCards.addEventListener('submit', handleAddCards);
 
+card.addEventListener ('submit', (evt) => {
+  evt.preventDefault();
+});
+
 const initialCards = [
   {
-    name: 'США',
-    link: 'http://127.0.0.1:5500/mesto/images/USA.jpg'
+    name: 'Архыз',
+    link: 'https://pictures.s3.yandex.net/frontend-developer/cards-compressed/arkhyz.jpg'
   },
   {
-    name: 'Черепаха',
-    link: 'http://127.0.0.1:5500/mesto/images/turtle.jpg'
+    name: 'Челябинская область',
+    link: 'https://pictures.s3.yandex.net/frontend-developer/cards-compressed/chelyabinsk-oblast.jpg'
   },
   {
-    name: 'Монтерей',
-    link: 'http://127.0.0.1:5500/mesto/images/monterey.jpg'
+    name: 'Иваново',
+    link: 'https://pictures.s3.yandex.net/frontend-developer/cards-compressed/ivanovo.jpg'
   },
   {
-    name: 'Катердальная пещера',
-    link: 'http://127.0.0.1:5500/mesto/images/cathedral-cove.jpg'
+    name: 'Камчатка',
+    link: 'https://pictures.s3.yandex.net/frontend-developer/cards-compressed/kamchatka.jpg'
   },
   {
-    name: 'Остров Ириомит',
-    link: 'http://127.0.0.1:5500/mesto/images/iriomote-island.jpg'
+    name: 'Холмогорский район',
+    link: 'https://pictures.s3.yandex.net/frontend-developer/cards-compressed/kholmogorsky-rayon.jpg'
   },
   {
-    name: 'Кабо Сан Лукас',
-    link: 'http://127.0.0.1:5500/mesto/images/cabo-san-lucas.jpg'
+    name: 'Байкал',
+    link: 'https://pictures.s3.yandex.net/frontend-developer/cards-compressed/baikal.jpg'
   }
 ];
 
 let like = document.querySelector('.element__like');
 like.addEventListener('click', () =>
-like.classList.add('element__like_active'));
+like.classList.toggle('element__like_active'));
