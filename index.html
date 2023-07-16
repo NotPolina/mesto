@@ -5,6 +5,8 @@
  <meta name="viewport" content="width=device-width, initial-scale=1.0">
  <link href="pages/index.css" rel="stylesheet" type="text/css">
  <title>Mesto</title>
+ <script src="./scripts/cards.js" defer></script>
+ <script src="./scripts/index.js" defer></script>
 </head>
 <body>
   <div class="page">
@@ -25,7 +27,7 @@
        </section>
        <section class="elements">
         <template id="cards">
-          <article class="element">
+          <li class="element">
             <img class="element__item" src="" alt="">
             <button class="element__trash" type="button">
               <img class="element__trash-button" src="./images/Trash.svg" alt="Delete">
@@ -36,68 +38,7 @@
                 <img class="element__like-heart" src="./images/like.svg" alt="Лайк">
               </button>
             </div>
-          </article>
-        </template>
-          <article class="element">
-            <img class="element__item" src="./images/turtle.jpg" alt="Черепаха">
-            <button class="element__trash" type="button">
-              <img class="element__trash-button" src="./images/Trash.svg" alt="Delete">
-            </button>
-            <div class="element__info">
-              <h2 class="element__title">Черепаха</h2>
-              <button class="element__like" type="button">
-                <img class="element__like-heart" src="./images/like.svg" alt="Лайк">
-              </button>
-            </div>
-          </article>
-          <article class="element">
-            <img class="element__item" src="./images/monterey.jpg" alt="Монтерей">
-            <button class="element__trash" type="button">
-              <img class="element__trash-button" src="./images/Trash.svg" alt="Delete">
-            </button>
-            <div class="element__info">
-              <h2 class="element__title">Монтерей</h2>
-              <button class="element__like" type="button">
-                <img class="element__like-heart" src="./images/like.svg" alt="Лайк">
-              </button>
-            </div>
-          </article>
-          <article class="element">
-            <img class="element__item" src="./images/cathedral-cove.jpg" alt="Катедральная пещера">
-            <button class="element__trash" type="button">
-              <img class="element__trash-button" src="./images/Trash.svg" alt="Delete">
-            </button>
-            <div class="element__info">
-              <h2 class="element__title">Катедральная пещера</h2>
-              <button class="element__like" type="button">
-                <img class="element__like-heart" src="./images/like.svg" alt="Лайк">
-              </button>
-            </div>
-          </article>
-          <article class="element">
-            <img class="element__item" src="./images/iriomote-island.jpg" alt="Остров Ириомит">
-            <button class="element__trash" type="button">
-              <img class="element__trash-button" src="./images/Trash.svg" alt="Delete">
-            </button>
-            <div class="element__info">
-              <h2 class="element__title">Остров Ириомит</h2>
-              <button class="element__like" type="button">
-                <img class="element__like-heart" src="./images/like.svg" alt="Лайк">
-              </button>
-            </div>
-          </article>
-          <article class="element">
-            <img class="element__item" src="./images/cabo-san-lucas.jpg" alt="Кабо Сан Лукас">
-            <button class="element__trash" type="button">
-              <img class="element__trash-button" src="./images/Trash.svg" alt="Delete">
-            </button>
-            <div class="element__info">
-              <h2 class="element__title">Кабо Сан Лукас</h2>
-              <button class="element__like" type="button">
-                <img class="element__like-heart" src="./images/like.svg" alt="Лайк">
-              </button>
-            </div>
-          </article>
+          </li>
        </section>
     </main>  
     <footer class="footer">
@@ -130,6 +71,5 @@
       </div>
     </div>  
   </div>
-  <script src="./scripts/index.js"></script>
 </body>
 </html>
