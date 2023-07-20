@@ -53,8 +53,8 @@ function openPopup() {
 }
 
 function openPopupCards() {
-  placeInput.value = cardsPlace.textContent;
-  linkInput.value = cardsLink.textContent;
+  placeInput.value = cardsPlace;
+  linkInput.value = cardsLink;
   popupCards.classList.add('popup_opened')
 }
 
@@ -79,7 +79,3 @@ popupCards.addEventListener ('submit', (evt) => {
 
   
 });
-
-let like = document.querySelector('.element__like');
-like.addEventListener('click', () =>
-like.classList.toggle('element__like_active'));

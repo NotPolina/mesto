@@ -25,27 +25,26 @@ const initialCards = [
   }
 ];
 
-const renderCards = (cardsName) => {
-  const li = document.createElement('li');
-  li.classList.add('element')
+const cardTemplate = document.querySelector('#cards').content
+const elements = document.querySelector('.elements')
 
-  const image = document.createElement('img')
-  image.classList.add('element__item')
+const createCard = (link, name) => {
+  const li = cardTemplate.querySelector('.element').cloneNode(true)
+  li.querySelector('.element__item').src = link
+  li.querySelector('.element__title').textContent = name
+  
+  li.querySelector('.element__like').addEventListener('click', function (evt) {
+    evt.target.classList.toggle('element__like_active')
+  });
 
-  const title = document.createElement('h2')
-  title.classList.add('element__title')
-
-  const buttonTrash = document.createElement('button')
-  buttonTrash.classList.add('element__trash')
-
-  const buttonLike = document.createElement('button')
-  buttonLike.classList.add('element__like')
-
-  li.append(image, title, buttonTrash, buttonLike)
-
+  li.querySelector('.element__trash').addEventListener('click', () => {
+    li.remove()
+  })
+  
   return li
 }
 
-initialCards.forEach((cardsName) => {
-  elements.append(renderCards(cardsName))
+initialCards.forEach(card => { 
+  const newCard = createCard(card.link, card.name)
+  elements.prepend(newCard)
 })
