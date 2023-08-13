@@ -28,7 +28,7 @@ const initialCards = [
 const cardTemplate = document.querySelector('#cards').content
 const elements = document.querySelector('.elements')
 
-const createCard = (link, name) => {
+const createCard = (link, name,) => {
   const li = cardTemplate.querySelector('.element').cloneNode(true)
   li.querySelector('.element__item').src = link
   li.querySelector('.element__title').textContent = name
@@ -40,7 +40,7 @@ const createCard = (link, name) => {
   li.querySelector('.element__trash').addEventListener('click', () => {
     li.remove()
   })
-  
+
   return li
 }
 
