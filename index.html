@@ -5,7 +5,6 @@
  <meta name="viewport" content="width=device-width, initial-scale=1.0">
  <link href="pages/index.css" rel="stylesheet" type="text/css">
  <title>Mesto</title>
- <script src="./scripts/cards.js" defer></script>
  <script src="./scripts/index.js" defer></script>
 </head>
 <body>
@@ -45,7 +44,7 @@
     <footer class="footer">
       <p class="footer__copyright">&copy; 2023 Popova Polina</p>
     </footer>
-    <div class="popup">
+    <div class="popup popup__edit">
       <div class="popup__container">
         <button type="button" class="popup__button-close"></button>
         <form name="profile" class="popup__form">
@@ -58,7 +57,7 @@
         </form>
       </div>
     </div>
-    <div class="popup__cards">
+    <div class="popup popup__cards">
       <div class="popup__container">
         <button type="button" class="popup__button-close-cards"></button>
         <form name="profile" class="popup__form-element">
@@ -70,14 +69,14 @@
           <button type="submit" class="popup__button-save">Создать</button>
         </form>
       </div>
-    </div>  
-    <div class="popup__image">
+    </div>
+    <div class="popup popup__image">
       <div class="popup__container-image">
         <button type="button" class="popup__button-close-image"></button>
         <img class="popup__big-image" src="" alt="">
         <h2 class="popup__title-big-image"></h2>
       </div>
     </div>
-  </div>
+</div>
 </body>
 </html>
