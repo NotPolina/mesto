@@ -37,7 +37,7 @@ function closePopup(popup) {
 //Попап редактирования профиля
 let formElementProfile = document.querySelector('.popup__form');
 let popup = document.querySelector('.popup');
-let popupEdit = document.querySelector('.popup__edit');
+let popupEdit = document.querySelector('.popup_edit');
 
 let buttonProfilePopupOpen = document.querySelector('.profile__edit-button');
 let buttonPopupClose = document.querySelector('.popup__button-close');
@@ -78,7 +78,7 @@ let formElementCards = document.querySelector('.popup__form-element');
 
 let buttonCardsPopupOpen = document.querySelector('.profile__add-button');
 let buttonCardsPopupClose = document.querySelector('.popup__button-close-cards');
-let popupCards = document.querySelector('.popup__cards');
+let popupCards = document.querySelector('.popup_cards');
 
 let placeInput = document.querySelector('.popup__input_place_value');
 let linkInput = document.querySelector('.popup__input_link_value');
@@ -140,7 +140,7 @@ const renderCard = (placeValue, linkValue) => {
 }
 
 //Попап просмотра фотографии
-let popupImage = document.querySelector('.popup__image');
+let popupImage = document.querySelector('.popup_image');
 let buttonImagePopupClose = document.querySelector('.popup__button-close-image');
 
 let bigImage = document.querySelector('.popup__big-image');
